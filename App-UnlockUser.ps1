@@ -5,7 +5,7 @@ $DomainAdminPW = ConvertTo-SecureString 'L3x1ngton!' -AsPlainText -Force
 $Credentials = New-Object System.Management.Automation.PSCredential ($DomainAdminUN, $DomainAdminPW)
 $Server = "NYCGDC30.na.corp.ipgnetwork.com"
 $OU = @("BGT","CAP","CTR","CWW","ENT","MCO","MCR","MEW","MGH","MHC","MHE","MRM","MUN","MWG","MWM","OPT","XBC")
- 
+
 Function Refresh-List
 {
     $LockedUser = @()
